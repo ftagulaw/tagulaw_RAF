@@ -31,6 +31,19 @@
             border-collapse: collapse;
             padding: 1px;            
         }
+
+		.underline-top::before{
+			content: "";
+			display: block;
+			border-bottom: 1px solid black;
+		}
+
+		.underline-bottom::after{
+			content: "";
+			display: block;
+			border-bottom: 1px solid black;
+		}
+
         
 	</style>
 </head>
@@ -55,9 +68,7 @@
 	</table>
 	<table id="second-table" width="100%">
 		<tr>
-			<td>
-				<b>Student Information</b>
-			</td>
+			<td><b>Student Information</b></td>
 			<td><i>SY & Term:</i></td>
 			<td>2324/2T</td>
 			<td><i>Program:</i></td>
@@ -275,11 +286,11 @@
             <td colspan="2" class="text-right">5,181.09</td>
         </tr>
         <tr>
-            <td colspan="2"></td>
+            <td colspan="2"></td>	
             <td colspan="1"></td>
             <td colspan="1"></td>
             <td colspan="2"><b> Outstanding Balance </b></td>
-            <td colspan="2" class="text-right"><b><u> 27,122.00 </u></b></td>
+            <td colspan="2" class="text-right underline-bottom underline-top"><b>27,122.00</b></td>
         </tr>
         <tr>
             <td colspan="7">
